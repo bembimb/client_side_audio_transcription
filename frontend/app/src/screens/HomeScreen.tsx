@@ -36,7 +36,7 @@ const HomeScreen: React.FC = () => {
   const statusLabel = (() => {
     switch (status) {
       case "idle":
-        return "Idle – waiting for an mp3 file.";
+        return "Idle - waiting for an audio file.";
       case "loading-model":
         return "Loading Whisper model into this browser (first load can be slow)...";
       case "ready":
@@ -46,7 +46,7 @@ const HomeScreen: React.FC = () => {
       case "done":
         return "Transcription finished.";
       case "error":
-        return "Error – see message below.";
+        return "Error - see message below.";
       default:
         return "";
     }
@@ -56,7 +56,7 @@ const HomeScreen: React.FC = () => {
     <main className="home">
       {/* Step 1 */}
       <section className="section">
-        <h2 className="section-title">Step 1 - Select mp3 file</h2>
+        <h2 className="section-title">Step 1 - Select an audio file</h2>
         <p className="section-description">
           Choose an audio file
         </p>
@@ -68,7 +68,7 @@ const HomeScreen: React.FC = () => {
             onClick={handleChooseFileClick}
             disabled={isBusy}
           >
-            {isBusy ? "Processing..." : "Choose mp3 file"}
+            {isBusy ? "Processing..." : "Choose an audio file"}
           </button>
           <span className="file-name">
             {selectedFileName || "No file selected yet."}
@@ -110,7 +110,7 @@ const HomeScreen: React.FC = () => {
           readOnly
           placeholder={
             status === "idle"
-              ? "The transcript will appear here after you select an mp3 file."
+              ? "The transcript will appear here after you select an audio file."
               : transcript
               ? ""
               : "Transcription result is empty."
