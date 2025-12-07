@@ -1,0 +1,39 @@
+# Environment config
+.env
+*.env
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+
+# Docker
+*.pid
+*.sock
+*.tar
+
+# coverage reports
+coverage/
+frontend/app/coverage/
+
+# Jest cache
+frontend/app/.jest-cache/
+
+# Node / Vite frontend
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Vite build artifacts
+dist/
+dist-ssr/
+build/
+frontend/app/dist/
+frontend_vite_template_*
