@@ -1,20 +1,17 @@
-import "./style.css";
-import { AppRegistry } from "react-native";
+// frontend/app/src/main.tsx
+import React from "react";
+import ReactDOM from "react-dom/client";
 import App from "./App";
+import "./style.css";
 
-const appName = "FrontendViteTemplate";
+const rootElement = document.getElementById("root");
 
-AppRegistry.registerComponent(appName, () => App);
+if (!rootElement) {
+  throw new Error("Root element #root not found");
+}
 
-const rootTag =
-  document.getElementById("root") ??
-  (() => {
-    const root = document.createElement("div");
-    root.id = "root";
-    document.body.appendChild(root);
-    return root;
-  })();
-
-AppRegistry.runApplication(appName, {
-  rootTag
-});
+ReactDOM.createRoot(rootElement).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);

@@ -1,53 +1,14 @@
-import { View, Text, Pressable, StyleSheet, Linking } from "react-native";
-import { REPO_URL } from "../screens/HomeScreenUtil";
+import React from "react";
 
-const SettingsBar = () => {
-  const openUrl = (url: string) => {
-    Linking.openURL(url).catch((err) => {
-      console.error("Failed to open URL:", err);
-    });
-  };
-
+const SettingsBar: React.FC = () => {
   return (
-    <View style={styles.container}>
-      <View style={styles.inner}>
-        <Pressable onPress={() => openUrl(REPO_URL)}>
-          <Text style={styles.logoText}>Frontend Vite Template</Text>
-        </Pressable>
-      </View>
-    </View>
+    <div className="settings-bar">
+      <div className="settings-main">
+        <div className="settings-label">Model</div>
+        <div className="settings-value">Xenova/whisper-tiny.en (Transformers.js, in-browser)</div>
+      </div>
+    </div>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    borderBottomWidth: StyleSheet.hairlineWidth,
-    borderBottomColor: "rgba(148,163,184,0.4)",
-    backgroundColor: "rgba(15,23,42,0.98)"
-  },
-  inner: {
-    paddingHorizontal: 16,
-    paddingVertical: 10,
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between"
-  },
-  logoRow: {
-    flexDirection: "row",
-    alignItems: "center"
-  },
-  logoText: {
-    fontSize: 14,
-    fontWeight: "700",
-    color: "#e5e7eb",
-    marginRight: 8,
-    letterSpacing: 0.8,
-    textTransform: "uppercase"
-  },
-  navRow: {
-    flexDirection: "row",
-    alignItems: "center"
-  },
-});
 
 export default SettingsBar;

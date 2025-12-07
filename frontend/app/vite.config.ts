@@ -1,25 +1,14 @@
+// frontend/app/vite.config.ts
 import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
 export default defineConfig({
-  base: "/frontend_vite_template/",
-
-  assetsInclude: ["**/*.wasm"],
-
-  resolve: {
-    alias: {
-      "react-native": "react-native-web"
-    }
-  },
-
-  optimizeDeps: {
-    exclude: ["react-native"]
-  },
-
+  plugins: [react()],
   build: {
-    outDir: "dist",
-    emptyOutDir: true,
-    commonjsOptions: {
-      transformMixedEsModules: true
-    }
+    target: "es2022"
+  },
+  optimizeDeps: {
+    // Pre-bundling this library is heavy; better to exclude it.
+    exclude: ["@huggingface/transformers"]
   }
 });

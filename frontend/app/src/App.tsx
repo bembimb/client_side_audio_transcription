@@ -1,28 +1,30 @@
-import type { FC } from "react";
-import { View, StyleSheet } from "react-native";
-import { AuthProvider } from "./context/Auth";
-import SettingsBar from "./components/SettingsBar";
+import React from "react";
 import HomeScreen from "./screens/HomeScreen";
+import SettingsBar from "./components/SettingsBar";
+import { REPO_URL } from "./screens/HomeScreenUtil";
 
-const App: FC = () => {
+const App: React.FC = () => {
   return (
-    <AuthProvider>
-      <View style={styles.root}>
-        <SettingsBar />
+    <div className="app-root">
+      <div className="app-shell">
+        <header className="app-header">
+          <div>
+            <a href={REPO_URL} target="_blank" rel="noreferrer">
+              <h1 className="app-title">
+                Client-side Transcription
+              </h1>
+            </a>
+            <p className="app-subtitle">
+              A Browser-Based AI Audio Transcription Playground Powered by Whisper. No installation, registration, or payment required.
+            </p>
+          </div>
+          <SettingsBar />
+        </header>
+
         <HomeScreen />
-      </View>
-    </AuthProvider>
+      </div>
+    </div>
   );
 };
-
-const styles = StyleSheet.create({
-  root: {
-    flex: 1,
-    height: "100%",
-    margin: 0,
-    padding: 0,
-    backgroundColor: "#cfcfcf"
-  }
-});
 
 export default App;
