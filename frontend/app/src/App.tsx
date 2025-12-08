@@ -15,7 +15,7 @@ const App: React.FC = () => {
               </h1>
             </a>
             <p className="app-subtitle">
-              A Browser-Based AI Audio Transcription Playground Powered by Whisper. No installation, registration, or payment required.
+              A Browser-Based AI Audio Transcription Playground Powered by Whisper. No installation, No registration, or No payment required.
             </p>
           </div>
           <SettingsBar />
