@@ -100,7 +100,7 @@ const HomeScreen: React.FC = () => {
       <section className="section">
         <h2 className="section-title">Step 3 - Transcription</h2>
         <p className="section-description">
-          The recognized English text will appear below. You can copy &amp;
+          The recognized text will appear below. You can copy &amp;
           paste it into other tools.
         </p>
 
