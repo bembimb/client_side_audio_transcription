@@ -57,10 +57,6 @@ const HomeScreen: React.FC = () => {
       {/* Step 1 */}
       <section className="section">
         <h2 className="section-title">Step 1 - Select an audio file</h2>
-        <p className="section-description">
-          Choose an audio file
-        </p>
-
         <div className="button-row">
           <button
             type="button"
