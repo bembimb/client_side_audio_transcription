@@ -100,8 +100,7 @@ const HomeScreen: React.FC = () => {
       <section className="section">
         <h2 className="section-title">Step 3 - Transcription</h2>
         <p className="section-description">
-          The recognized text will appear below. You can copy &amp;
-          paste it into other tools.
+          The recognized text will appear below.
         </p>
 
         <textarea
