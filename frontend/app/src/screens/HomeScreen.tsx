@@ -1,15 +1,15 @@
-// frontend/app/src/screens/HomeScreen.tsx
-import React, { ChangeEvent, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { useTranscription } from "../hooks/useTranscription";
 
-const HomeScreen: React.FC = () => {
+const HomeScreen = () => {
   const { status, error, transcript, transcribeFile, reset } =
     useTranscription();
   const [selectedFileName, setSelectedFileName] = useState<string>("");
   const fileInputRef = useRef<HTMLInputElement | null>(null);
 
-  const handleFileChange = async (event: ChangeEvent<HTMLInputElement>) => {
-    const file = event.target.files?.[0];
+  const handleFileChange = async (event: unknown) => {
+    const file = (event as any).target?.files?.[0] as File | undefined;
+
     if (!file) {
       setSelectedFileName("");
       return;
